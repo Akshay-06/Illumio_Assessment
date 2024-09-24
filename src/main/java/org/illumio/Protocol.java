@@ -3,7 +3,7 @@ package org.illumio;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ProtocolConverter {
+public class Protocol {
 
     private static final Map<String, String> protocolMap = new HashMap<>();
 

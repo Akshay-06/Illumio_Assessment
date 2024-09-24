@@ -19,7 +19,7 @@ public class FlowLogProcessor {
                 String dstPort = fields[6];
                 String protocolNumber = fields[7];
 
-                String protocol = ProtocolConverter.convertProtocol(protocolNumber).toLowerCase();
+                String protocol = Protocol.convertProtocol(protocolNumber).toLowerCase();
 
                 String key = dstPort + "," + protocol;
                 List<String> tags = lookUpMap.getOrDefault(key, List.of("Untagged"));
@@ -45,7 +45,7 @@ public class FlowLogProcessor {
                 String dstPort = fields[6];
                 String protocolNumber = fields[7];
 
-                String protocol = ProtocolConverter.convertProtocol(protocolNumber).toLowerCase();
+                String protocol = Protocol.convertProtocol(protocolNumber).toLowerCase();
 
                 String key = dstPort + "," + protocol;
                 portProtocolCount.put(key, portProtocolCount.getOrDefault(key, 0) + 1);
