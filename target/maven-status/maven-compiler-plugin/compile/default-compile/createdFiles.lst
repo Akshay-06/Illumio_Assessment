@@ -1,0 +1,5 @@
+org/illumio/FlowLogProcessor.class
+org/illumio/LookUpTableParser.class
+org/illumio/Main.class
+org/illumio/CSVWriter.class
+org/illumio/ProtocolConverter.class
